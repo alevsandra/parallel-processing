@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Polyline?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Interfejs.Controller">
+   <top>
+      <GridPane prefHeight="136.0" prefWidth="814.0" BorderPane.alignment="CENTER">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="291.0" minWidth="10.0" prefWidth="200.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="451.00001525878906" minWidth="10.0" prefWidth="394.1999969482422" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="200.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Pane prefHeight="200.0" prefWidth="200.0" />
+            <Pane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1" />
+            <Pane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="2" />
+            <Pane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="3" />
+            <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1">
+               <children>
+                  <ComboBox id="combo1" fx:id="combo1" layoutX="65.0" layoutY="14.0" onAction="#pickComputer" prefHeight="20.0" prefWidth="91.0" />
+                  <Text layoutX="14.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Połącz" wrappingWidth="41.64727783203125">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="180.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="z">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Text>
+                  <ComboBox id="combo5" fx:id="combo5" layoutX="215.0" layoutY="14.0" onAction="#pickDevice" prefHeight="20.0" prefWidth="100.0" />
+               </children>
+            </Pane>
+            <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <children>
+                  <ComboBox id="combo2" fx:id="combo2" layoutX="65.0" layoutY="14.0" onAction="#pickComputer" prefHeight="20.0" prefWidth="91.0" />
+                  <Text layoutX="14.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Połącz" wrappingWidth="41.64727783203125">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="180.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="z">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Text>
+                  <ComboBox id="combo6" fx:id="combo6" layoutX="215.0" layoutY="14.0" onAction="#pickDevice" prefHeight="20.0" prefWidth="100.0" />
+               </children>
+            </Pane>
+            <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <children>
+                  <ComboBox id="combo3" fx:id="combo3" layoutX="65.0" layoutY="14.0" onAction="#pickComputer" prefHeight="20.0" prefWidth="91.0" />
+                  <Text layoutX="14.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Połącz" wrappingWidth="41.64727783203125">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="180.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="z">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Text>
+                  <ComboBox id="combo7" fx:id="combo7" layoutX="215.0" layoutY="14.0" onAction="#pickDevice" prefHeight="20.0" prefWidth="100.0" />
+               </children>
+            </Pane>
+            <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <children>
+                  <ComboBox id="combo4" fx:id="combo4" layoutX="65.0" layoutY="14.0" prefHeight="20.0" prefWidth="91.0" />
+                  <Text layoutX="14.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Połącz" wrappingWidth="41.64727783203125">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="180.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="z">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Text>
+                  <ComboBox id="combo8" fx:id="combo8" layoutX="215.0" layoutY="14.0" prefHeight="20.0" prefWidth="100.0" />
+               </children>
+            </Pane>
+            <Pane prefHeight="34.0" prefWidth="220.0" GridPane.columnIndex="2" />
+            <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <children>
+                  <Button fx:id="start" layoutX="14.0" layoutY="6.0" mnemonicParsing="false" onAction="#StartButtonPushed" prefHeight="23.0" prefWidth="144.0" text="Start">
+                     <font>
+                        <Font name="Verdana" size="12.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+            <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <children>
+                  <Button fx:id="przerwij" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#PrzerwijButtonPushed" prefHeight="23.0" prefWidth="144.0" text="Przerwij">
+                     <font>
+                        <Font name="Verdana" size="12.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+            <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+         </children>
+      </GridPane>
+   </top>
+   <left>
+      <GridPane prefHeight="318.0" prefWidth="48.0" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+      </GridPane>
+   </left>
+   <center>
+      <GridPane prefHeight="404.0" prefWidth="705.0" BorderPane.alignment="CENTER">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="141.00000610351563" minWidth="10.0" prefWidth="85.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="226.5999755859375" minWidth="10.0" prefWidth="125.60001220703126" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="280.0" minWidth="10.0" prefWidth="224.80003662109374" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="126.80003662109374" minWidth="10.0" prefWidth="97.4000244140625" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="174.39998779296877" minWidth="10.0" prefWidth="171.99997558593748" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#bac7d2" height="80.0" stroke="#bac7d2" strokeType="INSIDE" width="80.0">
+               <effect>
+                  <InnerShadow blurType="ONE_PASS_BOX" color="#6b6f71" offsetX="-3.0" offsetY="-3.0" />
+               </effect>
+            </Rectangle>
+            <Rectangle id="W1" arcHeight="5.0" arcWidth="5.0" height="60.0" stroke="BLACK" strokeType="INSIDE" width="60.0">
+               <GridPane.margin>
+                  <Insets left="10.0" />
+               </GridPane.margin>
+            </Rectangle>
+            <Rectangle id="W2" arcHeight="5.0" arcWidth="5.0" fill="#bac7d2" height="80.0" stroke="#bac7d2" strokeType="INSIDE" width="80.0" GridPane.rowIndex="1">
+               <effect>
+                  <InnerShadow color="#6b6f71" offsetX="-3.0" offsetY="-3.0" />
+               </effect>
+            </Rectangle>
+            <Rectangle id="W3" arcHeight="5.0" arcWidth="5.0" fill="#bac7d2" height="80.0" stroke="#bac7d2" strokeType="INSIDE" width="80.0" GridPane.rowIndex="2">
+               <effect>
+                  <InnerShadow color="#6b6f71" offsetX="-3.0" offsetY="-3.0" />
+               </effect>
+            </Rectangle>
+            <Rectangle id="W4" arcHeight="5.0" arcWidth="5.0" fill="#bac7d2" height="80.0" stroke="#bac7d2" strokeType="INSIDE" width="80.0" GridPane.rowIndex="3">
+               <effect>
+                  <InnerShadow color="#6b6f71" offsetX="-3.0" offsetY="-3.0" />
+               </effect>
+            </Rectangle>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="60.0" stroke="BLACK" strokeType="INSIDE" width="60.0" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets left="10.0" />
+               </GridPane.margin>
+            </Rectangle>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="60.0" stroke="BLACK" strokeType="INSIDE" width="60.0" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets left="10.0" />
+               </GridPane.margin>
+            </Rectangle>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="60.0" stroke="BLACK" strokeType="INSIDE" width="60.0" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets left="10.0" />
+               </GridPane.margin>
+            </Rectangle>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="W1">
+               <GridPane.margin>
+                  <Insets bottom="68.0" left="32.0" />
+               </GridPane.margin>
+               <font>
+                  <Font size="9.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="W2" GridPane.rowIndex="1">
+               <font>
+                  <Font size="9.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets bottom="68.0" left="32.0" />
+               </GridPane.margin>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="W3" GridPane.rowIndex="2">
+               <font>
+                  <Font size="9.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets bottom="68.0" left="32.0" />
+               </GridPane.margin>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="W4" GridPane.rowIndex="3">
+               <font>
+                  <Font size="9.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets bottom="68.0" left="32.0" />
+               </GridPane.margin>
+            </Text>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#cfcec2" height="260.0" stroke="#faf5c4" strokeType="INSIDE" width="111.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets left="40.0" top="110.0" />
+               </GridPane.margin>
+               <effect>
+                  <InnerShadow color="#92918f" height="40.0" offsetX="-3.0" offsetY="-3.0" radius="19.5" width="40.0" />
+               </effect>
+            </Rectangle>
+            <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#cfcec2" height="5.0" layoutX="-26.0" layoutY="-2.0" stroke="#92918f" strokeType="INSIDE" width="80.0" x="80.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#cfcec2" height="5.0" layoutX="-26.0" layoutY="12.0" stroke="#92918f" strokeType="INSIDE" width="80.0" x="80.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#cfcec2" height="5.0" layoutX="-26.0" layoutY="25.0" stroke="#92918f" strokeType="INSIDE" width="80.0" x="80.0" />
+                  <Polyline fill="#92918f" layoutX="-30.0" layoutY="-3.0" points="181.0, -17.199996948242188, 206.5, -30.0, 206.4000244140625, 218.40000915527344, 181.0, 242.19996643066406" stroke="#92918f" strokeType="INSIDE" />
+               </children>
+            </Pane>
+            <Pane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="3">
+               <children>
+                  <Polyline fill="#bac7d2" points="95.20001220703125, 2.399998426437378, 79.60001373291016, 13.59999942779541, 7.62939453125E-6, 13.59999942779541, 14.799995422363281, 2.4000022411346436" stroke="#bac7d2" strokeType="INSIDE" />
+                  <Line endX="79.00001525878906" endY="13.599993705749512" startX="1.2" startY="13.600000381469727" stroke="#bac7d2" strokeWidth="2.0" />
+                  <Polyline fill="#6b6f71" points="95.60000610351562, 2.4000022411346436, 95.60000610351562, 80.80001831054688, 78.79998779296875, 94.39997100830078, 77.00001525878906, 15.014208793640137" stroke="#6b6f71" strokeType="INSIDE" />
+               </children>
+            </Pane>
+            <Pane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="2">
+               <children>
+                  <Polyline fill="#bac7d2" points="95.20001220703125, 2.399998426437378, 77.00001525878906, 15.014208793640137, 0.0, 13.600015640258789, 14.799995422363281, 2.4000022411346436" stroke="#bac7d2" strokeType="INSIDE" />
+                  <Line endX="77.20001220703125" endY="13.599993705749512" startX="1.2" startY="13.600000381469727" stroke="#bac7d2" strokeWidth="2.0" />
+                  <Polyline fill="#6b6f71" points="95.60000610351562, 2.4000022411346436, 95.60000610351562, 80.80001831054688, 78.79998779296875, 94.40001678466797, 77.00001525878906, 15.014208793640137" stroke="#6b6f71" strokeType="INSIDE" />
+               </children>
+            </Pane>
+            <Pane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Polyline fill="#bac7d2" points="95.20001220703125, 2.399998426437378, 78.79998779296875, 15.399993896484375, 3.814697265625E-6, 15.399993896484375, 14.799995422363281, 2.4000022411346436" stroke="#bac7d2" strokeType="INSIDE" />
+                  <Line endX="77.40000915527344" endY="13.600006103515625" startX="4.200016021728516" startY="13.600006103515625" stroke="#bac7d2" strokeWidth="2.0" />
+                  <Polyline fill="#6b6f71" points="95.60000610351562, 2.4000022411346436, 95.60000610351562, 80.80001831054688, 78.79998779296875, 94.0, 78.81422424316406, 15.01422119140625" stroke="#6b6f71" strokeType="INSIDE" />
+               </children>
+            </Pane>
+            <Pane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
+               <children>
+                  <Polyline fill="#bac7d2" points="95.20001220703125, 2.399998426437378, 79.01423645019531, 16.01422119140625, -0.21421432495117188, 16.01422119140625, 14.799995422363281, 2.4000022411346436" stroke="#bac7d2" strokeType="INSIDE" />
+                  <Line endX="77.60002136230469" endY="13.600006103515625" layoutY="1.0" startX="4.200016021728516" startY="13.600006103515625" stroke="#bac7d2" strokeWidth="2.0" />
+                  <Polyline fill="#6b6f71" points="95.60000610351562, 2.4000022411346436, 95.60000610351562, 80.80001831054688, 78.79998779296875, 94.0, 79.01423645019531, 16.01422119140625" stroke="#6b6f71" strokeType="INSIDE" />
+               </children>
+            </Pane>
+            <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="3">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a9b0b7" height="65.0" layoutX="10.0" layoutY="22.0" stroke="#a9b0b7" strokeType="INSIDE" width="154.0">
+                     <effect>
+                        <InnerShadow color="#424546" offsetX="-3.0" offsetY="-3.0" />
+                     </effect>
+                  </Rectangle>
+                  <Polyline fill="#a9b0b7" points="174.39999389648438, 12.000005722045898, 163.99996948242188, 22.0000057220459, 9.999975204467773, 22.0000057220459, 31.199987411499023, 12.000005722045898" stroke="#a9b0b7" strokeType="INSIDE" />
+                  <Polyline fill="#a9b0b7" points="145.59994506835938, -3.2000060081481934, 126.4000015258789, 22.0000057220459, 58.400001525878906, 22.0000057220459, 79.2000503540039, -3.2000060081481934" stroke="#b7bfc7" strokeType="INSIDE" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#424546" height="5.0" layoutX="34.0" layoutY="33.0" stroke="#424546" strokeType="INSIDE" width="107.0" />
+                  <Polyline fill="#424546" points="174.39999389648438, 11.799997329711914, 174.39999389648438, 77.5999984741211, 162.39999389648438, 86.99999237060547, 162.39999389648438, 22.000009536743164" stroke="#424546" strokeType="INSIDE" />
+               </children>
+            </Pane>
+            <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="2">
+               <children>
+                  <Pane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a9b0b7" height="65.0" layoutX="10.0" layoutY="22.0" stroke="#a9b0b7" strokeType="INSIDE" width="154.0">
+                           <effect>
+                              <InnerShadow color="#424546" offsetX="-3.0" offsetY="-3.0" />
+                           </effect>
+                        </Rectangle>
+                        <Polyline fill="#424546" points="174.39999389648438, 11.799997329711914, 174.39999389648438, 77.5999984741211, 162.39999389648438, 86.99999237060547, 162.39999389648438, 22.000009536743164" stroke="#424546" strokeType="INSIDE" />
+                        <Polyline fill="#a9b0b7" points="174.39999389648438, 12.000005722045898, 162.39999389648438, 22.000009536743164, 9.999975204467773, 22.0000057220459, 31.199987411499023, 12.000005722045898" stroke="#a9b0b7" strokeType="INSIDE" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#424546" height="5.0" layoutX="34.0" layoutY="33.0" stroke="#424546" strokeType="INSIDE" width="107.0" />
+                        <Polyline fill="#a9b0b7" points="145.59994506835938, -3.2000060081481934, 126.4000015258789, 22.0000057220459, 58.400001525878906, 22.0000057220459, 79.2000503540039, -3.2000060081481934" stroke="#b7bfc7" strokeType="INSIDE" />
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+            <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="4">
+               <children>
+                  <Rectangle arcHeight="1.0" arcWidth="1.0" fill="#82a8cc" height="18.0" layoutX="40.0" layoutY="76.0" stroke="#779bbd" strokeType="INSIDE" width="94.0" />
+                  <Polyline fill="#82a8cc" layoutX="2.0" points="119.2000503540039, 41.60000228881836, 131.99996948242188, 76.00000762939453, 37.999977111816406, 76.00000762939453, 52.800025939941406, 41.60000228881836" stroke="#779bbd" strokeType="INSIDE">
+                     <effect>
+                        <InnerShadow color="#6888a7" offsetY="8.0" />
+                     </effect>
+                  </Polyline>
+                  <Polyline fill="#317abf" points="113.8000259399414, 46.59999465942383, 120.9999771118164, 68.8000259399414, 53.199989318847656, 68.8000259399414, 61.600013732910156, 46.59999465942383" stroke="#317abf" strokeType="INSIDE" />
+                  <Rectangle arcHeight="1.0" arcWidth="1.0" fill="#82a8cc" height="6.0" layoutX="44.0" layoutY="3.3" stroke="#779bbd" strokeType="INSIDE" width="87.0" />
+                  <Polyline fill="#6888a7" points="130.99996948242188, 9.20000171661377, 121.19998931884766, 41.60000228881836, 54.600013732910156, 41.60000228881836, 44.400001525878906, 9.20000171661377" stroke="#6888a7" strokeType="INSIDE" />
+               </children>
+            </Pane>
+            <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="1">
+               <children>
+                  <Rectangle arcHeight="1.0" arcWidth="1.0" fill="#82a8cc" height="18.0" layoutX="40.0" layoutY="76.0" stroke="#779bbd" strokeType="INSIDE" width="94.0" />
+                  <Polyline fill="#82a8cc" layoutX="2.0" points="119.2000503540039, 41.60000228881836, 131.99996948242188, 76.00000762939453, 37.999977111816406, 76.00000762939453, 52.800025939941406, 41.60000228881836" stroke="#779bbd" strokeType="INSIDE">
+                     <effect>
+                        <InnerShadow color="#6888a7" offsetY="8.0" />
+                     </effect>
+                  </Polyline>
+                  <Polyline fill="#317abf" points="113.8000259399414, 46.59999465942383, 120.9999771118164, 68.8000259399414, 53.199989318847656, 68.8000259399414, 61.600013732910156, 46.59999465942383" stroke="#317abf" strokeType="INSIDE" />
+                  <Rectangle arcHeight="1.0" arcWidth="1.0" fill="#82a8cc" height="6.0" layoutX="44.0" layoutY="3.3" stroke="#779bbd" strokeType="INSIDE" width="87.0" />
+                  <Polyline fill="#6888a7" points="130.99996948242188, 9.20000171661377, 121.19998931884766, 41.60000228881836, 54.600013732910156, 41.60000228881836, 44.400001525878906, 9.20000171661377" stroke="#6888a7" strokeType="INSIDE" />
+               </children>
+            </Pane>
+            <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2">
+               <children>
+                  <Polyline id="serwer_dach" fill="#cfcec2" layoutX="113.0" layoutY="38.0" points="63.5, 38.0, 38.0, 50.80000305175781, -71.79998779296875, 50.80000305175781, -39.199981689453125, 38.0" stroke="#cfcec2" strokeType="INSIDE" />
+               </children>
+            </Pane>
+            <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <children>
+                  <Polyline fill="#80ff0000" layoutX="62.0" layoutY="22.0" points="-39.79999542236328, -80.00004577636719, 50.0, -80.00005340576172, 49.99999237060547, 26.800018310546875, -39.79999542236328, 26.800018310546875" strokeType="INSIDE" />
+                  <Line endX="52.0" endY="-30.60003662109375" layoutX="101.0" layoutY="26.0" startX="11.0" startY="-30.60003662109375" />
+                  <Polyline fx:id="line_w1" fill="#80ff0000" layoutX="62.0" layoutY="22.0" points="-39.79999542236328, -80.00004577636719, 50.0, -80.00005340576172, 50.0, -26.60003662109375, 94.0, -26.60003662109375" stroke="RED" strokeDashOffset="45.0" strokeType="INSIDE" strokeWidth="2.0" style="-fx-stroke-dash-array: 18;" />
+                  <Polyline fx:id="line_w2" fill="#80ff0000" points="21.0, 49.0, 112.0, 49.0, 112.0, -4.60003662109375, 153.5, -4.10003662109375" stroke="#00ff0f" strokeDashOffset="45.0" strokeType="INSIDE" strokeWidth="2.0" style="-fx-stroke-dash-array: 18;" />
+               </children>
+            </Pane>
+            <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <children>
+                  <Polyline fill="#80ff0000" layoutX="62.0" layoutY="22.0" points="-39.79999542236328, -80.00004577636719, 50.0, -80.00005340576172, 49.99999237060547, 26.800018310546875, -39.79999542236328, 26.800018310546875" strokeType="INSIDE" />
+                  <Line endX="152.0" startX="112.0" />
+                  <Polyline fx:id="line_w3" fill="#80ff0000" layoutX="62.0" layoutY="22.0" points="-39.79999542236328, -80.00004577636719, 50.0, -80.00005340576172, 49.5, -22.5, 91.5, -22.5" stroke="#ffdd00" strokeDashOffset="45.0" strokeType="INSIDE" strokeWidth="2.0" style="-fx-stroke-dash-array: 18;" />
+                  <Polyline fx:id="line_w4" fill="#80ff0000" points="21.0, 49.0, 112.0, 49.0, 111.5, 0.5, 155.5, 0.5" stroke="#2e00ff" strokeDashOffset="45.0" strokeType="INSIDE" strokeWidth="2.0" style="-fx-stroke-dash-array: 18;" />
+               </children>
+            </Pane>
+            <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="3">
+               <children>
+                  <Polyline fill="#80ff0000" layoutX="66.0" layoutY="-15.0" points="24.0, 67.0, -44.0, 67.0, -44.0, -36.0, 24.0, -36.0" strokeType="INSIDE" />
+                  <Line endX="52.0" endY="-30.60003662109375" layoutX="-30.0" layoutY="31.0" startX="17.0" startY="-30.60003662109375" />
+                  <Polyline fx:id="line_drukarka2" fill="#80ff0000" points="-11.0, 0.89996337890625, 22.0, 0.5, 22.0, 52.0, 92.0, 52.0" stroke="#ffdd00" strokeDashOffset="45.0" strokeType="INSIDE" strokeWidth="2.0" style="-fx-stroke-dash-array: 18;" />
+                  <Polyline fx:id="line_drukarka1" fill="#80ff0000" points="-14.0, -0.5, 22.0, 0.5, 22.0, -51.0, 98.0, -51.0" stroke="#00ff0f" strokeDashOffset="45.0" strokeType="INSIDE" strokeWidth="2.0" style="-fx-stroke-dash-array: 18;" />
+               </children>
+            </Pane>
+            <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="1">
+               <children>
+                  <Polyline fill="#80ff0000" layoutX="66.0" layoutY="-15.0" points="25.0, 67.0, -44.0, 67.0, -44.0, -36.0, 25.0, -36.0" strokeType="INSIDE" />
+                  <Line endX="48.0" endY="-34.5" layoutX="-26.0" layoutY="31.0" startX="12.5" startY="-34.5" />
+                  <Polyline fx:id="line_skaner2" fill="#80ff0000" points="-13.0, -3.0, 22.5, -3.0, 22.0, 52.0, 98.0, 52.0" stroke="#2e00ff" strokeDashOffset="45.0" strokeType="INSIDE" strokeWidth="2.0" style="-fx-stroke-dash-array: 18;" />
+                  <Polyline fx:id="line_skaner1" fill="#80ff0000" points="-13.5, -4.0, 22.0, -4.0, 22.0, -51.0, 91.0, -51.0" stroke="RED" strokeDashOffset="45.0" strokeType="INSIDE" strokeWidth="2.0" style="-fx-stroke-dash-array: 18;" />
+               </children>
+            </Pane>
+         </children>
+      </GridPane>
+   </center>
+   <right>
+      <GridPane prefHeight="318.0" prefWidth="48.0" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+      </GridPane>
+   </right>
+   <bottom>
+      <GridPane prefHeight="21.0" prefWidth="801.0" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+      </GridPane>
+   </bottom>
+</BorderPane>
